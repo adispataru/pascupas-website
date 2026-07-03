@@ -1,22 +1,347 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
 <meta charset="utf-8">
-<title>Pas cu Pas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pas cu pas — Platformă de învățare interactivă</title>
+<meta name="description" content="Platformă de învățare interactivă: studenții capătă competențe și satisfacția lucrului rezolvat, iar profesorii văd în timp real cum lucrează fiecare student.">
+<meta property="og:title" content="Pas cu pas">
+<meta property="og:description" content="Platformă de învățare interactivă — progres vizibil pentru studenți, insight în timp real pentru profesori.">
+<meta property="og:image" content="https://pascupas.ro/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://pascupas.ro/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="canonical" href="https://pascupas.ro/">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Pas cu pas",
+      "url": "https://pascupas.ro/",
+      "inLanguage": ["ro", "en"]
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Pas cu pas",
+      "url": "https://pascupas.ro/",
+      "logo": "https://pascupas.ro/img/logo.png",
+      "parentOrganization": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universitatea de Vest din Timișoara — Facultatea de Informatică",
+        "url": "https://info.uvt.ro"
+      }
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
 
-<h1>Pas cu Pas</h1>
+<header class="hero">
+  <nav class="topbar">
+    <img src="img/logo-dark.png" alt="Pas cu pas" class="brand">
+    <div class="lang-switch" id="lang-switch">
+      <button data-lang="ro">RO</button><span>|</span><button data-lang="en">EN</button>
+    </div>
+  </nav>
 
-<p>
-Conectăm educația. Pas cu Pas. 
-</p>
+  <div class="hero-inner">
+    <h1 data-i18n="hero.title">Învățare cu progres vizibil,<br>pas cu pas.</h1>
+    <p class="lead" data-i18n="hero.lead">Platforma de cursuri interactive unde studenții câștigă
+      competențe și satisfacția lucrului rezolvat, iar profesorii văd exact cum învață fiecare student.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://app.pascupas.ro" data-i18n="hero.cta">Intră în aplicație</a>
+      <a class="btn btn-ghost" href="#audiences" data-i18n="hero.more">Află mai multe</a>
+    </div>
+  </div>
+</header>
 
-<p>
-The platform is currently under development.
-</p>
+<main id="audiences" class="audiences">
+  <section class="audience-card">
+    <div class="icon icon-lg">
+      <!-- mortarboard -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M2.5 9.5 12 5l9.5 4.5L12 14 2.5 9.5Z"/>
+        <path d="M6.5 11.5v4.2c0 1.2 2.5 2.8 5.5 2.8s5.5-1.6 5.5-2.8v-4.2"/>
+        <path d="M21.5 9.5v5"/>
+      </svg>
+    </div>
+    <h2 data-i18n="stud.title">Pentru studenți</h2>
+    <p class="audience-lead" data-i18n="stud.lead">Înveți făcând — și simți că avansezi.</p>
+    <ul class="checklist">
+      <li data-i18n="stud.li1">Lecții împărțite în pași mici, cu exerciții aplicate la fiecare pas</li>
+      <li data-i18n="stud.li2">Hartă a parcursului, insigne și statistici personale care te țin motivat</li>
+      <li data-i18n="stud.li3">Mod concentrare, fără distrageri — doar tu și problema</li>
+      <li data-i18n="stud.li4">Reiei oricând exact de unde ai rămas</li>
+    </ul>
+  </section>
+
+  <section class="audience-card">
+    <div class="icon icon-lg">
+      <!-- bar chart with pulse -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/>
+      </svg>
+    </div>
+    <h2 data-i18n="teach.title">Pentru profesori</h2>
+    <p class="audience-lead" data-i18n="teach.lead">Vezi cum se învață — nu doar ce note ies.</p>
+    <ul class="checklist">
+      <li data-i18n="teach.li1">Analitice în timp real din lucrul efectiv al studenților: timp pe pas, încercări, blocaje</li>
+      <li data-i18n="teach.li2">Vezi din timp studenții în risc și pașii unde se împotmolește toată grupa</li>
+      <li data-i18n="teach.li3">Cohorte, comparații între grupe și tendințe de la o săptămână la alta</li>
+      <li data-i18n="teach.li4">Creezi și publici cursuri direct în platformă, fără unelte externe</li>
+    </ul>
+  </section>
+</main>
+
+<section class="code-band">
+  <div class="code-band-inner">
+    <div class="code-band-text">
+      <p class="kicker" data-i18n="code.kicker">Exerciții de programare</p>
+      <h2 data-i18n="code.title">Scris în pagină.<br>Executat în cloud.</h2>
+      <p data-i18n="code.body">Studenții scriu C, C++ sau Python direct în lecție, iar codul rulează
+        pe infrastructura noastră cloud-native — izolat, sigur și verificat automat în câteva secunde.</p>
+      <p data-i18n="code.scale">Se scalează elastic: o grupă întreagă poate rula cod în același timp,
+        fără cozi și fără nicio instalare pe calculatoarele studenților.</p>
+    </div>
+    <div class="terminal" aria-hidden="true">
+      <div class="terminal-bar"><span class="tb-r"></span><span class="tb-y"></span><span class="tb-g"></span></div>
+      <pre><code><span class="t-line"><span class="t-dim">$</span> <span data-i18n="term.run">trimite soluția…</span></span>
+<span class="t-line"><span class="t-dim" data-i18n="term.compile">se compilează în cloud…</span></span>
+<span class="t-line"><span class="t-ok">✓</span> <span data-i18n="term.t1">test 1 — trecut</span></span>
+<span class="t-line"><span class="t-ok">✓</span> <span data-i18n="term.t2">test 2 — trecut</span></span>
+<span class="t-line"><span class="t-ok">✓</span> <span data-i18n="term.t3">test 3 — trecut</span></span>
+<span class="t-line"><span class="t-ok" data-i18n="term.done">Felicitări! Pasul e rezolvat. +1 pas în parcurs</span></span></code></pre>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="tile">
+    <div class="icon">
+      <!-- lightning -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2Z"/>
+      </svg>
+    </div>
+    <h3 data-i18n="f1.title">Feedback instant</h3>
+    <p data-i18n="f1.body">Fiecare exercițiu e verificat automat — înveți din greșeli pe loc, nu la examen.</p>
+  </div>
+
+  <div class="tile">
+    <div class="icon">
+      <!-- play-circle / resume -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="9.5"/>
+        <path d="m10 8.5 5.5 3.5-5.5 3.5v-7Z"/>
+      </svg>
+    </div>
+    <h3 data-i18n="f2.title">Reia oricând</h3>
+    <p data-i18n="f2.body">Platforma ține minte unde ai rămas și te duce direct la pasul următor.</p>
+  </div>
+
+  <div class="tile">
+    <div class="icon">
+      <!-- award / badge -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="9" r="5.5"/>
+        <path d="m8.8 13.5-1.8 7 5-2.8 5 2.8-1.8-7"/>
+      </svg>
+    </div>
+    <h3 data-i18n="f3.title">Insigne și recompense</h3>
+    <p data-i18n="f3.body">Progresul se vede: insigne, serii de zile active și statistici personale.</p>
+  </div>
+
+  <div class="tile">
+    <div class="icon">
+      <!-- laptop / any device -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="4" y="5" width="16" height="11" rx="1.5"/>
+        <path d="M2 19h20"/>
+      </svg>
+    </div>
+    <h3 data-i18n="f4.title">Fără instalare</h3>
+    <p data-i18n="f4.body">Merge pe orice dispozitiv, direct din browser — în laborator sau de acasă.</p>
+  </div>
+</section>
+
+<section class="cred">
+  <p data-i18n="cred.text">Un proiect dezvoltat, găzduit și întreținut de
+    <a href="https://info.uvt.ro">Facultatea de Informatică</a> din cadrul
+    <a href="https://www.uvt.ro">Universității de Vest din Timișoara</a> —
+    folosit la cursuri chiar de profesorii facultății.</p>
+</section>
+
+<section class="closing">
+  <p data-i18n="closing.text">Gata de primul pas?</p>
+  <p class="closing-sub" data-i18n="closing.sub">Instituția ta folosește deja Pas cu pas? Intră direct
+    în aplicație. Dacă nu — cere universității sau liceului tău să se alăture, sau
+    <a href="mailto:florin.spataru@e-uvt.ro?subject=Parteneriat%20Pas%20cu%20Pas">scrie-ne direct</a>.</p>
+  <a class="btn btn-primary btn-lg" href="https://app.pascupas.ro" data-i18n="closing.cta">Intră în aplicație</a>
+</section>
+
+<footer>
+  <span>© 2026 Pas cu pas</span>
+  <a href="https://app.pascupas.ro">app.pascupas.ro</a>
+  <a href="mailto:florin.spataru@e-uvt.ro?subject=Parteneriat%20Pas%20cu%20Pas">Contact</a>
+</footer>
+
+<script>
+(function () {
+  var i18n = {
+    en: {
+      "meta.title": "Pas cu pas — Interactive learning platform",
+      "meta.desc": "Interactive learning platform: students gain skills and the satisfaction of solved work, while teachers see in real time how every student is learning.",
+      "hero.title": "Learning with visible progress,<br>step by step.",
+      "hero.lead": "The interactive course platform where students gain skills and the satisfaction of solved work, and teachers see exactly how every student is learning.",
+      "hero.cta": "Open the app",
+      "hero.more": "Learn more",
+      "stud.title": "For students",
+      "stud.lead": "Learn by doing — and feel yourself moving forward.",
+      "stud.li1": "Lessons split into small steps, with hands-on exercises at every step",
+      "stud.li2": "A journey map, badges and personal stats that keep you motivated",
+      "stud.li3": "Focus mode, no distractions — just you and the problem",
+      "stud.li4": "Pick up exactly where you left off, any time",
+      "teach.title": "For teachers",
+      "teach.lead": "See how learning happens — not just the grades that come out.",
+      "teach.li1": "Real-time analytics from students' actual work: time on step, attempts, blockers",
+      "teach.li2": "Spot at-risk students early, and the steps where the whole group gets stuck",
+      "teach.li3": "Cohorts, group comparisons and week-over-week trends",
+      "teach.li4": "Create and publish courses right in the platform, no external tools",
+      "code.kicker": "Programming exercises",
+      "code.title": "Written on the page.<br>Executed in the cloud.",
+      "code.body": "Students write C, C++ or Python right inside the lesson, and the code runs on our cloud-native infrastructure — isolated, secure and automatically checked within seconds.",
+      "code.scale": "It scales elastically: an entire class can run code at the same time, with no queues and nothing to install on students' computers.",
+      "term.run": "submit solution…",
+      "term.compile": "compiling in the cloud…",
+      "term.t1": "test 1 — passed",
+      "term.t2": "test 2 — passed",
+      "term.t3": "test 3 — passed",
+      "term.done": "Well done! Step solved. +1 step on your journey",
+      "f1.title": "Instant feedback",
+      "f1.body": "Every exercise is checked automatically — you learn from mistakes on the spot, not at the exam.",
+      "f2.title": "Resume any time",
+      "f2.body": "The platform remembers where you left off and takes you straight to the next step.",
+      "f3.title": "Badges & rewards",
+      "f3.body": "Progress you can see: badges, activity streaks and personal stats.",
+      "f4.title": "Nothing to install",
+      "f4.body": "Works on any device, right from the browser — in the lab or from home.",
+      "cred.text": "A project developed, hosted and maintained by the <a href=\"https://info.uvt.ro\">Faculty of Computer Science</a> at the <a href=\"https://www.uvt.ro\">West University of Timișoara</a> — used in courses by the faculty's own teachers.",
+      "closing.text": "Ready for the first step?",
+      "closing.sub": "Is your institution already on Pas cu pas? Jump right in. If not — ask your university or high school to join, or <a href=\"mailto:florin.spataru@e-uvt.ro?subject=Parteneriat%20Pas%20cu%20Pas\">write to us directly</a>.",
+      "closing.cta": "Open the app"
+    },
+    ro: {
+      "meta.title": "Pas cu pas — Platformă de învățare interactivă",
+      "meta.desc": "Platformă de învățare interactivă: studenții capătă competențe și satisfacția lucrului rezolvat, iar profesorii văd în timp real cum lucrează fiecare student.",
+      "hero.title": "Învățare cu progres vizibil,<br>pas cu pas.",
+      "hero.lead": "Platforma de cursuri interactive unde studenții câștigă competențe și satisfacția lucrului rezolvat, iar profesorii văd exact cum învață fiecare student.",
+      "hero.cta": "Intră în aplicație",
+      "hero.more": "Află mai multe",
+      "stud.title": "Pentru studenți",
+      "stud.lead": "Înveți făcând — și simți că avansezi.",
+      "stud.li1": "Lecții împărțite în pași mici, cu exerciții aplicate la fiecare pas",
+      "stud.li2": "Hartă a parcursului, insigne și statistici personale care te țin motivat",
+      "stud.li3": "Mod concentrare, fără distrageri — doar tu și problema",
+      "stud.li4": "Reiei oricând exact de unde ai rămas",
+      "teach.title": "Pentru profesori",
+      "teach.lead": "Vezi cum se învață — nu doar ce note ies.",
+      "teach.li1": "Analitice în timp real din lucrul efectiv al studenților: timp pe pas, încercări, blocaje",
+      "teach.li2": "Vezi din timp studenții în risc și pașii unde se împotmolește toată grupa",
+      "teach.li3": "Cohorte, comparații între grupe și tendințe de la o săptămână la alta",
+      "teach.li4": "Creezi și publici cursuri direct în platformă, fără unelte externe",
+      "code.kicker": "Exerciții de programare",
+      "code.title": "Scris în pagină.<br>Executat în cloud.",
+      "code.body": "Studenții scriu C, C++ sau Python direct în lecție, iar codul rulează pe infrastructura noastră cloud-native — izolat, sigur și verificat automat în câteva secunde.",
+      "code.scale": "Se scalează elastic: o grupă întreagă poate rula cod în același timp, fără cozi și fără nicio instalare pe calculatoarele studenților.",
+      "term.run": "trimite soluția…",
+      "term.compile": "se compilează în cloud…",
+      "term.t1": "test 1 — trecut",
+      "term.t2": "test 2 — trecut",
+      "term.t3": "test 3 — trecut",
+      "term.done": "Felicitări! Pasul e rezolvat. +1 pas în parcurs",
+      "f1.title": "Feedback instant",
+      "f1.body": "Fiecare exercițiu e verificat automat — înveți din greșeli pe loc, nu la examen.",
+      "f2.title": "Reia oricând",
+      "f2.body": "Platforma ține minte unde ai rămas și te duce direct la pasul următor.",
+      "f3.title": "Insigne și recompense",
+      "f3.body": "Progresul se vede: insigne, serii de zile active și statistici personale.",
+      "f4.title": "Fără instalare",
+      "f4.body": "Merge pe orice dispozitiv, direct din browser — în laborator sau de acasă.",
+      "cred.text": "Un proiect dezvoltat, găzduit și întreținut de <a href=\"https://info.uvt.ro\">Facultatea de Informatică</a> din cadrul <a href=\"https://www.uvt.ro\">Universității de Vest din Timișoara</a> — folosit la cursuri chiar de profesorii facultății.",
+      "closing.text": "Gata de primul pas?",
+      "closing.sub": "Instituția ta folosește deja Pas cu pas? Intră direct în aplicație. Dacă nu — cere universității sau liceului tău să se alăture, sau <a href=\"mailto:florin.spataru@e-uvt.ro?subject=Parteneriat%20Pas%20cu%20Pas\">scrie-ne direct</a>.",
+      "closing.cta": "Intră în aplicație"
+    }
+  };
+
+  function apply(lang) {
+    var dict = i18n[lang] || i18n.ro;
+    document.documentElement.lang = lang;
+    document.title = dict["meta.title"];
+    var md = document.querySelector('meta[name="description"]');
+    if (md) md.setAttribute("content", dict["meta.desc"]);
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var v = dict[el.getAttribute("data-i18n")];
+      if (v) el.innerHTML = v;
+    });
+    document.querySelectorAll("#lang-switch button").forEach(function (b) {
+      var active = b.getAttribute("data-lang") === lang;
+      b.classList.toggle("active", active);
+      b.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+    try { localStorage.setItem("pcp-lang", lang); } catch (e) { /* ignore */ }
+  }
+
+  var lang;
+  try { lang = localStorage.getItem("pcp-lang"); } catch (e) { /* ignore */ }
+  if (!lang) {
+    var nav = (navigator.language || "ro").toLowerCase();
+    lang = nav.indexOf("ro") === 0 ? "ro" : "en";
+  }
+  apply(lang);
+
+  document.querySelectorAll("#lang-switch button").forEach(function (b) {
+    b.addEventListener("click", function () { apply(b.getAttribute("data-lang")); });
+  });
+
+  // Motion: reveal-on-scroll + terminal "typing". JS-added classes only, so the page
+  // is fully visible without JS; disabled entirely under prefers-reduced-motion.
+  var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduced && "IntersectionObserver" in window) {
+    var revealables = document.querySelectorAll(".audience-card, .tile, .code-band-text, .cred, .closing");
+    revealables.forEach(function (el) { el.classList.add("reveal"); });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("reveal-in"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    revealables.forEach(function (el) { io.observe(el); });
+
+    var term = document.querySelector(".terminal");
+    if (term) {
+      term.classList.add("typing");
+      var tio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          tio.unobserve(term);
+          term.querySelectorAll(".t-line").forEach(function (line, i) {
+            setTimeout(function () { line.classList.add("t-shown"); }, 350 + i * 420);
+          });
+        });
+      }, { threshold: 0.4 });
+      tio.observe(term);
+    }
+  }
+})();
+</script>
 
 </body>
 </html>
