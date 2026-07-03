@@ -2,13 +2,8 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "pascupas-website",
   "compatibility_date": "2025-09-27",
-  "observability": {
-    "enabled": true
-  },
-  "assets": {
-    "directory": "."
-  },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
+  "observability": { "enabled": true },
+  "main": "src/index.js",
+  "assets": { "directory": "./public" },
+  "compatibility_flags": ["nodejs_compat"]
 }
